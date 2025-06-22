@@ -35,6 +35,6 @@ const navLinks = [
   { name: "Team", to: "/team" },
   { name: "Jobs", to: "/jobs" },
   { name: "Status", to: "/status" },
-  { name: "Docs", to: "/documentation" },
+  { name: "Docs", to: "/documentation" }
 ]
 </script>
