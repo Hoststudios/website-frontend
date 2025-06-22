@@ -21,7 +21,7 @@ const routes = [
   { path: '/partnerships', component: Partnerships },
   { path: '/jobs', component: Jobs },
   { path: '/games', component: Games },
-  { path: '/status', component: Statuspage }
+  { path: '/status', component: Statuspage },
   { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound }
 ]
 
