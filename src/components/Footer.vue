@@ -20,8 +20,6 @@
             <li><router-link to="/jobs">Jobs</router-link></li>
             <li><router-link to="/partnerships">Partners</router-link></li>
             <li><router-link to="/status">Status</router-link></li>
-            <li><router-link to="/documentation">Docs</router-link></li>
-            <li><router-link to="/contact">Contact</router-link></li>
           </ul>
         </div>
         <!-- Socials & Rechtliches -->
