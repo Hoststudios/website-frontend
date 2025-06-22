@@ -1,32 +1,35 @@
 <!-- src/components/Navbar.vue -->
 <template>
-  <nav class="w-full bg-black text-white py-3 px-6 sticky top-0 z-50 shadow-md">
-    <div class="max-w-7xl mx-auto flex items-center justify-between">
-      <!-- Logo -->
-      <div class="flex items-center gap-2">
-        <img src="https://cdn-proxy.hoststudios.de/logo.png" alt="Logo" class="w-8 h-8" />
-        <span class="text-lg font-semibold">Host Gamestudios</span>
+    <nav class="bg-black text-white shadow-md sticky top-0 z-50 w-full">
+      <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+        <!-- Logo links -->
+        <router-link to="/" class="flex items-center gap-2">
+          <img src="https://cdn-proxy.hoststudios.de/logo.png" alt="Host Gamestudios Logo" class="w-10 h-10" />
+          <span class="text-lg font-extrabold tracking-tight">Host Gamestudios</span>
+        </router-link>
+        <!-- Navigation -->
+        <ul class="hidden md:flex gap-8 text-sm font-semibold uppercase">
+          <li><router-link to="/">Home</router-link></li>
+          <li><router-link to="/games">Games</router-link></li>
+          <li><router-link to="/projects">Projects</router-link></li>
+          <li><router-link to="/team">Team</router-link></li>
+          <li><router-link to="/jobs">Jobs</router-link></li>
+          <li><router-link to="/partnerships">Partners</router-link></li>
+          <li><router-link to="/status">Status</router-link></li>
+          <li><router-link to="/documentation">Docs</router-link></li>
+          <li><router-link to="/contact">Contact</router-link></li>
+        </ul>
+        <!-- Optional: CTA rechts -->
+        <div class="hidden md:block">
+          <router-link
+            to="/games"
+            class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-full transition font-bold"
+          >
+            Jetzt Spielen
+          </router-link>
+        </div>
+        <!-- Burger Menü für mobile (später, wenn gewünscht) -->
       </div>
-
-      <!-- Navigation Links -->
-      <ul class="hidden md:flex gap-6 font-medium text-sm uppercase tracking-wide">
-        <li><a href="#home" class="hover:text-orange-400">Start</a></li>
-        <li><a href="#services" class="hover:text-orange-400">Services</a></li>
-        <li><a href="#team" class="hover:text-orange-400">Team</a></li>
-        <li><a href="#kontakt" class="hover:text-orange-400">Kontakt</a></li>
-        <li>
-          <a href="https://seriuxmod.hoststudios.de" target="_blank" class="hover:text-orange-400">
-            Seriuxmod ↗
-          </a>
-        </li>
-      </ul>
-
-      <!-- Rechts: CTA Button -->
-      <div class="flex items-center gap-4">
-        <button class="hidden md:inline-block bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-full text-sm font-semibold transition">
-          Jetzt Spielen
-        </button>
-      </div>
-    </div>
-  </nav>
-</template>
+    </nav>
+  </template>
+  

@@ -1,20 +1,31 @@
+// src/router.js
 import { createRouter, createWebHistory } from 'vue-router'
 
-import Home from './views/HomePage.vue'
-import Contact from './views/ContactPage.vue'
-import Booking from './views/BookingPage.vue'
-import Legal from './views/LegalPage.vue'
+import Homepage from './views/Homepage.vue'
+import Team from './views/Team.vue'
+import Contact from './views/Contact.vue'
+import Projects from './views/Projects.vue'
+import Documentation from './views/Documentation.vue'
+import Partnerships from './views/Partnerships.vue'
+import Jobs from './views/Jobs.vue'
+import Games from './views/Games.vue'
+import Statuspage from './views/Statuspage.vue'
 
 const routes = [
-  { path: '/', component: Home },
-  { path: '/kontakt', component: Contact },
-  { path: '/termin', component: Booking },
-  { path: '/rechtliches', component: Legal },
+  { path: '/', component: Homepage },
+  { path: '/team', component: Team },
+  { path: '/contact', component: Contact },
+  { path: '/projects', component: Projects },
+  { path: '/documentation', component: Documentation },
+  { path: '/partnerships', component: Partnerships },
+  { path: '/jobs', component: Jobs },
+  { path: '/games', component: Games },
+  { path: '/status', component: Statuspage }
 ]
 
 const router = createRouter({
   history: createWebHistory(),
-  routes,
+  routes
 })
 
 export default router
