@@ -3,7 +3,6 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 
 import Homepage from './views/Homepage.vue'
 import Team from './views/Team.vue'
-import Contact from './views/Contact.vue'
 import Projects from './views/Projects.vue'
 import Documentation from './views/Documentation.vue'
 import Partnerships from './views/Partnerships.vue'
@@ -15,7 +14,6 @@ import NotFound from './views/NotFound.vue'
 const routes = [
   { path: '/', component: Homepage },
   { path: '/team', component: Team },
-  { path: '/contact', component: Contact },
   { path: '/projects', component: Projects },
   { path: '/documentation', component: Documentation },
   { path: '/partnerships', component: Partnerships },

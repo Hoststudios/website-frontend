@@ -4,7 +4,7 @@
       <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
         <!-- Logo links -->
         <router-link to="/" class="flex items-center gap-2">
-          <img src="https://cdn-proxy.hoststudios.de/logo.png" alt="Host Gamestudios Logo" class="w-10 h-10" />
+          <img src="https://cdn-proxy.hoststudios.de/logo.jpeg" alt="Host Gamestudios Logo" class="w-10 h-10" />
           <span class="text-lg font-extrabold tracking-tight">Host Gamestudios</span>
         </router-link>
         <!-- Navigation -->
@@ -17,7 +17,6 @@
           <li><router-link to="/partnerships">Partners</router-link></li>
           <li><router-link to="/status">Status</router-link></li>
           <li><router-link to="/documentation">Docs</router-link></li>
-          <li><router-link to="/contact">Contact</router-link></li>
         </ul>
         <!-- Optional: CTA rechts -->
         <div class="hidden md:block">
