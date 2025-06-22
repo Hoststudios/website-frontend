@@ -1,16 +1,16 @@
 // src/router.js
 import { createRouter, createWebHistory } from 'vue-router'
 
-import Homepage from 'src/views/Homepage.vue'
-import Team from 'src/views/Team.vue'
-import Contact from 'src/views/Contact.vue'
-import Projects from 'src/views/Projects.vue'
-import Documentation from 'src/views/Documentation.vue'
-import Partnerships from 'src/views/Partnerships.vue'
-import Jobs from 'src/views/Jobs.vue'
-import Games from 'src/views/Games.vue'
-import Statuspage from 'src/views/Statuspage.vue'
-import NotFound from 'src/views/NotFound.vue'
+import Homepage from './views/Homepage.vue'
+import Team from './views/Team.vue'
+import Contact from './views/Contact.vue'
+import Projects from './views/Projects.vue'
+import Documentation from './views/Documentation.vue'
+import Partnerships from './views/Partnerships.vue'
+import Jobs from './views/Jobs.vue'
+import Games from './views/Games.vue'
+import Statuspage from './views/Statuspage.vue'
+import NotFound from './views/NotFound.vue'
 
 const routes = [
   { path: '/', component: Homepage },
