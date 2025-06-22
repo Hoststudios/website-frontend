@@ -4,7 +4,7 @@
       <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 justify-between px-4">
         <!-- Branding & Claim -->
         <div>
-          <img src="https://cdn-proxy.hoststudios.de/logo.png" alt="Logo" class="w-14 mb-4" />
+          <img src="https://cdn-proxy.hoststudios.de/logo_large.png" alt="Logo" class="w-14 mb-4" />
           <p class="text-2xl font-bold mb-2">Host Gamestudios</p>
           <p class="text-gray-400 mb-4">Spiele mit Vision.<br />Infrastruktur mit System.</p>
           <p class="text-gray-500 text-xs">&copy; 2025 Host Gamestudios</p>

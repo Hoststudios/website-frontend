@@ -15,7 +15,7 @@ import { useMotion } from '@vueuse/motion'
       <!-- Animate Glow BG -->
       <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-orange-400 opacity-30 blur-3xl animate-pulse pointer-events-none"></div>
       <img
-        src="https://cdn-proxy.hoststudios.de/logo.png"
+        src="https://cdn-proxy.hoststudios.de/logo_large.png"
         alt="Host Gamestudios Logo"
         class="w-32 md:w-40 mx-auto mb-8 drop-shadow-2xl z-10"
         loading="lazy"
