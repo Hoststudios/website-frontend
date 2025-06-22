@@ -1,7 +1,5 @@
 <script setup>
 import Navbar from './components/Navbar.vue'
-
-
 import ServicesSection from './components/ServicesSection.vue'
 import TeamSection from './components/TeamSection.vue'
 import ContactSection from './components/ContactSection.vue'
