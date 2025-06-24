@@ -123,23 +123,27 @@ function submitForm() {
       <h1 class="text-4xl md:text-5xl font-extrabold text-white text-center mb-12 drop-shadow-lg">
         Offene Jobs bei Host Gamestudios
       </h1>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        <transition-group name="card-fade" tag="div">
-          <div
-            v-for="(job, idx) in jobs"
-            :key="job.title"
-            @click="openForm(job)"
-            class="cursor-pointer bg-black/80 hover:bg-orange-500/80 hover:scale-105 hover:shadow-2xl transition-all duration-300 rounded-2xl p-7 flex flex-col items-center text-center text-white shadow-lg motion-safe:animate-fade-in-up"
-            style="animation-delay: calc(0.05s * var(--card-index))"
-            :style="{ '--card-index': idx }"
-          >
-            <h2 class="text-xl font-bold mb-2">{{ job.title }}</h2>
-            <p class="text-gray-300">{{ job.desc }}</p>
-            <span class="mt-4 inline-block px-5 py-1 rounded-full text-xs bg-orange-500/80 text-white">Jetzt bewerben</span>
-          </div>
-        </transition-group>
-      </div>
+      <!-- GRID direkt auf transition-group -->
+    <transition-group
+      name="card-fade"
+      tag="div"
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
+    >
+    <div
+      v-for="(job, idx) in jobs"
+      :key="job.title"
+      @click="openForm(job)"
+      class="cursor-pointer bg-black/80 hover:bg-orange-500/80 hover:scale-105 hover:shadow-2xl transition-all duration-300 rounded-2xl p-7 flex flex-col items-center text-center text-white shadow-lg motion-safe:animate-fade-in-up"
+      style="animation-delay: calc(0.05s * var(--card-index))"
+      :style="{ '--card-index': idx }"
+    >
+      <h2 class="text-xl font-bold mb-2">{{ job.title }}</h2>
+      <p class="text-gray-300">{{ job.desc }}</p>
+      <span class="mt-4 inline-block px-5 py-1 rounded-full text-xs bg-orange-500/80 text-white">Jetzt bewerben</span>
     </div>
+  </transition-group>
+</div>
+
 
     <!-- Bewerbungsformular als Modal -->
     <transition name="fade">
