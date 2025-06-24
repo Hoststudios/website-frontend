@@ -32,11 +32,10 @@
             <li><a href="https://twitter.com/hoststudios" target="_blank" class="hover:text-orange-400">Twitter</a></li>
           </ul>
           <div class="mt-4">
-            <a href="#" class="text-xs text-gray-400 hover:text-orange-400">Impressum</a> ·
+            <a href="#" class="text-xs text-gray-400 hover:text-orange-400">Impressum</a>
             <a href="#" class="text-xs text-gray-400 hover:text-orange-400">Datenschutz</a>
           </div>
         </div>
       </div>
     </footer>
   </template>
-  
