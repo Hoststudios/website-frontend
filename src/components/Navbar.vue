@@ -5,12 +5,10 @@ import { computed } from 'vue'
 const route = useRoute()
 const navLinks = [
   { name: "Home", to: "/" },
-  { name: "Games", to: "/games" },
   { name: "Projects", to: "/projects" },
   { name: "Team", to: "/team" },
   { name: "Jobs", to: "/jobs" },
   { name: "Status", to: "/status" },
-  { name: "Docs", to: "/documentation" },
 ]
 
 // Hilfsfunktion für die "active"-Class
