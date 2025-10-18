@@ -2,23 +2,18 @@
 <template>
     <footer class="bg-black text-white pt-14 pb-8">
       <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 justify-between px-4">
-        <!-- Branding & Claim -->
         <div>
-          <img src="https://cdn-proxy.hoststudios.de/logo_large.png" alt="Logo" class="w-14 mb-4" />
+          <img src="https://cdn-proxy.hoststudios.de/logo_large.png" alt="Logo" class="w-14 mb-4"/>
           <p class="text-2xl font-bold mb-2">Host Gamestudios</p>
           <p class="text-gray-400 mb-4">Spiele mit Vision.<br />Infrastruktur mit System.</p>
           <p class="text-gray-500 text-xs">&copy; 2025 Host Gamestudios</p>
-           <p>
-              <a href="#" class="text-xs text-gray-400 hover:text-orange-400">Impressum</a> |
-              <a href="#" class="text-xs text-gray-400 hover:text-orange-400">Datenschutz</a>
-            </p>
+           <p><router-link to="/impressum" class="text-xs text-gray-400 hover:text-orange-400">Impressum</router-link> | <router-link to="/datenschutz" class="text-xs text-gray-400 hover:text-orange-400">Datenschutz</router-link></p>
         </div>
         <!-- Navigation -->
         <div>
           <h3 class="font-bold mb-2">Navigation</h3>
           <ul class="space-y-1">
             <li><router-link to="/" class="hover:text-orange-400">Home</router-link></li>
-            <li><router-link to="/games" class="hover:text-orange-400">Games</router-link></li>
             <li><router-link to="/projects" class="hover:text-orange-400">Projects</router-link></li>
             <li><router-link to="/team" class="hover:text-orange-400">Team</router-link></li>
             <li><router-link to="/jobs" class="hover:text-orange-400">Jobs</router-link></li>

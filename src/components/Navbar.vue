@@ -1,3 +1,4 @@
+<!-- src/components/Navbar.vue -->
 <script setup>
 import { useRoute } from 'vue-router'
 import { computed } from 'vue'
@@ -10,7 +11,7 @@ const navLinks = [
   { name: "Jobs", to: "/jobs" },
 ]
 
-// Hilfsfunktion für die "active"-Class
+// funktion für die "active"-Class
 function navClass(nav) {
   if (nav.to === '/') return route.path === '/' ? 'bg-orange-500 text-white shadow' : 'text-white hover:bg-gray-800/70'
   return route.path.startsWith(nav.to) ? 'bg-orange-500 text-white shadow' : 'text-white hover:bg-gray-800/70'
@@ -26,13 +27,7 @@ function navClass(nav) {
       </router-link>
       <ul class="flex gap-4 items-center ml-8">
         <li v-for="nav in navLinks" :key="nav.to">
-          <router-link
-            :to="nav.to"
-            class="px-4 py-2 rounded-lg font-semibold transition-all"
-            :class="navClass(nav)"
-          >
-            {{ nav.name }}
-          </router-link>
+          <router-link :to="nav.to" class="px-4 py-2 rounded-lg font-semibold transition-all" :class="navClass(nav)">{{ nav.name }}</router-link>
         </li>
         <li><a href="https://status.hoststudios.de/" target="_blank" class="px-4 py-2 rounded-lg font-semibold transition-all text-white hover:bg-gray-800/70">Status</a></li>
       </ul>
