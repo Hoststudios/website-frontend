@@ -8,7 +8,6 @@ const navLinks = [
   { name: "Projects", to: "/projects" },
   { name: "Team", to: "/team" },
   { name: "Jobs", to: "/jobs" },
-  { name: "Status", to: "/status" },
 ]
 
 // Hilfsfunktion für die "active"-Class
@@ -35,8 +34,8 @@ function navClass(nav) {
             {{ nav.name }}
           </router-link>
         </li>
+        <li><a href="https://status.hoststudios.de/" target="_blank" class="px-4 py-2 rounded-lg font-semibold transition-all text-white hover:bg-gray-800/70">Status</a></li>
       </ul>
     </div>
   </nav>
-  <div class="h-20"></div>
 </template>

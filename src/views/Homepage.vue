@@ -36,7 +36,7 @@ import { useMotion } from '@vueuse/motion'
     </section>
 
     <!-- USP Section: 3 animierte Cards -->
-    <section class="bg-black text-white py-16 px-4">
+    <section class="bg-gray-900 text-white py-16 px-4">
       <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
         <div
           v-motion="{
@@ -81,7 +81,7 @@ import { useMotion } from '@vueuse/motion'
     </section>
 
     <!-- Games Showcase (Cards einzeln animiert) -->
-    <section class="bg-gray-900 text-white py-20 px-4">
+    <section class="bg-gray-800 text-white py-20 px-4">
       <div class="max-w-6xl mx-auto">
         <h2
           v-motion="{
@@ -98,7 +98,7 @@ import { useMotion } from '@vueuse/motion'
               initial: { opacity: 0, scale: 0.92, y: 20 },
               enter: { opacity: 1, scale: 1, y: 0, transition: { delay: 0.15 } }
             }"
-            class="bg-gray-800 rounded-2xl p-6 shadow-lg flex flex-col items-center hover:scale-105 transition"
+            class="bg-gray-900 rounded-2xl p-6 shadow-lg flex flex-col items-center hover:scale-105 transition"
           >
             <img src="https://cdn-proxy.hoststudios.de/game-seriuxmod.png" class="w-24 h-24 object-contain mb-4" />
             <h3 class="text-xl font-bold mb-2">Seriuxmod Client</h3>
