@@ -23,25 +23,55 @@ const scrollToId = (id) => {
 
     <!-- Leistung -->
     <section id="leistung" class="bg-gray-900 text-white py-16 px-4">
-      <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-5">
 
         <div v-motion="{initial: { opacity: 0, scale: 0.9, y: 40 },enter: { opacity: 1, scale: 1, y: 0, transition: { delay: 0.2 } }}"
           class="bg-gradient-to-br from-purple-800/80 to-gray-800/90 rounded-2xl p-8 shadow-lg flex flex-col items-center hover:scale-105 transition-transform duration-300">
-          <svg class="w-10 h-10 mb-3 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M12 8v4l3 3"></path><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"></circle></svg>
+          <svg class="w-10 h-10 mb-3 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9.75 3a.75.75 0 01.75.75v1.5a.75.75 0 01-.75.75H9a8.25 8.25 0 108.25 8.25v-.75a.75.75 0 01.75-.75h1.5a.75.75 0 01.75.75v.75A10.5 10.5 0 119 3h.75z" /></svg>
           <h2 class="text-xl font-bold mb-2">Full-Service Plattform</h2>
           <p class="text-gray-300 text-center">Von Games bis Backend – alles aus einer Hand. Statusseiten, Auth, Payment, Cluster-DB, CDN und Analytics individuell skalierbar.</p>
         </div>
 
         <div v-motion="{initial: { opacity: 0, scale: 0.9, y: 40 },enter: { opacity: 1, scale: 1, y: 0, transition: { delay: 0.3 } }}" class="bg-gradient-to-br from-orange-800/80 to-gray-800/90 rounded-2xl p-8 shadow-lg flex flex-col items-center hover:scale-105 transition-transform duration-300">
-          <svg class="w-10 h-10 mb-3 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-          <h2 class="text-xl font-bold mb-2">Team & Community Fokus</h2>
-          <p class="text-gray-300 text-center">Wir entwickeln transparent, mit und für die Community. Echte Developer-Support-Tools und eine offene Plattform-Philosophie.</p>
+          <svg class="w-10 h-10 mb-3 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" stroke-linecap="round" stroke-linejoin="round"d="M3 15a4 4 0 014-4h1.26A8 8 0 1120 12.5M12 20v-6m0 0l3 3m-3-3l-3 3" /></svg>
+          <h2 class="text-xl font-bold mb-2">Infrastruktur & Skalierung</h2>
+          <p class="text-gray-300 text-center">Automatische Skalierung für Live-Events, Seasonal Updates oder User-Spikes. Infrastruktur, die mit deinem Spiel wächst – ohne Downtime.</p>
         </div>
 
         <div v-motion="{initial: { opacity: 0, scale: 0.9, y: 40 },enter: { opacity: 1, scale: 1, y: 0, transition: { delay: 0.4 } }}" class="bg-gradient-to-br from-purple-800/80 to-orange-800/70 rounded-2xl p-8 shadow-lg flex flex-col items-center hover:scale-105 transition-transform duration-300">
+          <svg class="w-10 h-10 mb-3 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+          <h2 class="text-xl font-bold mb-2">Tools & Integration</h2>
+          <p class="text-gray-300 text-center">Nahtlose SDKs und APIs für Unity, Unreal & Godot. Plug’n’Play-Integration in bestehende Pipelines mit Webhooks, OAuth2 und REST-Support.</p>
+        </div>
+
+        <div v-motion="{initial: { opacity: 0, scale: 0.9, y: 40 },enter: { opacity: 1, scale: 1, y: 0, transition: { delay: 0.4 } }}" class="bg-gradient-to-br from-red-600/40 to-orange-700/70 rounded-2xl p-8 shadow-lg flex flex-col items-center hover:scale-105 transition-transform duration-300">
+          <svg class="w-10 h-10 mb-3 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M17 20v-2a4 4 0 00-3-3.87M9 20v-2a4 4 0 013-3.87M7 8a4 4 0 118 0 4 4 0 11-8 0z" /></svg>
+          <h2 class="text-xl font-bold mb-2">Team & Community Fokus</h2>
+          <p class="text-gray-300 text-center">Roadmaps, Dev-Diaries und Community-Votings. Jeder kann Einfluss nehmen – von Feature-Wünschen bis Bugfix-Priorisierung.</p>
+        </div>
+
+        <div v-motion="{initial: { opacity: 0, scale: 0.9, y: 40 },enter: { opacity: 1, scale: 1, y: 0, transition: { delay: 0.4 } }}" class="bg-gradient-to-br from-red-900/80 to-purple-600/20 rounded-2xl p-8 shadow-lg flex flex-col items-center hover:scale-105 transition-transform duration-300">
+          <svg class="w-10 h-10 mb-3 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M8 10h8m-8 4h5m-9 2a9 9 0 1116.32 4.9L21 21l-3.1-1.78A9 9 0 014 16z" /></svg>
+          <h2 class="text-xl font-bold mb-2">Feedback & Transparenz</h2>
+          <p class="text-gray-300 text-center">Roadmaps, Dev-Diaries und Community-Votings. Jeder kann Einfluss nehmen – von Feature-Wünschen bis Bugfix-Priorisierung.</p>
+        </div>
+
+        <div v-motion="{initial: { opacity: 0, scale: 0.9, y: 40 },enter: { opacity: 1, scale: 1, y: 0, transition: { delay: 0.4 } }}" class="bg-gradient-to-br from-purple-800/20 to-orange-800/70 rounded-2xl p-8 shadow-lg flex flex-col items-center hover:scale-105 transition-transform duration-300">
           <svg class="w-10 h-10 mb-3 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M8 12l2 2 4-4"></path><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"></circle></svg>
           <h2 class="text-xl font-bold mb-2">Für Studios & Solo-Devs</h2>
           <p class="text-gray-300 text-center">Support für Indie-Teams & große Projekte. 5% Beteiligung beim Payment, starke Infrastruktur & Partner wie Net-Struct.</p>
+        </div>
+
+        <div v-motion="{initial: { opacity: 0, scale: 0.9, y: 40 },enter: { opacity: 1, scale: 1, y: 0, transition: { delay: 0.4 } }}" class="bg-gradient-to-br from-purple-900/50 to-orange-900/50 rounded-2xl p-8 shadow-lg flex flex-col items-center hover:scale-105 transition-transform duration-300">
+          <svg class="w-10 h-10 mb-3 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3" stroke-width="2" /><path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 6v6c0 1.66 3.58 3 8 3s8-1.34 8-3V6m-16 6v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6" /></svg>
+          <h2 class="text-xl font-bold mb-2">Monetarisierung & Fair Share</h2>
+          <p class="text-gray-300 text-center">Flexible Revenue-Modelle, faire Gebührenstruktur und optionaler In-Game-Shop-Service. Du behältst die Kontrolle über Preise & Features.</p>
+        </div>
+
+        <div v-motion="{initial: { opacity: 0, scale: 0.9, y: 40 },enter: { opacity: 1, scale: 1, y: 0, transition: { delay: 0.4 } }}" class="bg-gradient-to-br from-orange-800/80 to-gray-700/50 rounded-2xl p-8 shadow-lg flex flex-col items-center hover:scale-105 transition-transform duration-300">
+          <svg class="w-10 h-10 mb-3 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2" ry="2" stroke-width="2" /><path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M7 11V7a5 5 0 0110 0v4" /></svg>
+          <h2 class="text-xl font-bold mb-2">Für Studios & Solo-Devs</h2>
+          <p class="text-gray-300 text-center">DSGVO-konform, verschlüsselte Kommunikation und Self-Hosting-Optionen. Deine Daten gehören dir – keine versteckten Cloud-Abhängigkeiten.</p>
         </div>
 
       </div>
@@ -73,6 +103,7 @@ const scrollToId = (id) => {
             <p class="text-gray-300 mb-4 text-center">Dein Erfolg ist unser Ziel. Wir unterstützen dich mit Erfahrung, Leidenschaft und Innovation.</p>
             <a href="https://discord.gg/PxaDQ8C9" target="_blank" class="bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-orange-600 transition">Mehr erfahren</a>
           </div>
+
         </div>
       </div>
     </section>
