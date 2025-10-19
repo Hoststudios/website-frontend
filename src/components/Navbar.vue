@@ -6,7 +6,6 @@ import { computed } from 'vue'
 const route = useRoute()
 const navLinks = [
   { name: "Home", to: "/" },
-  { name: "Projects", to: "/projects" },
   { name: "Team", to: "/team" },
   { name: "Jobs", to: "/jobs" },
 ]
@@ -29,7 +28,9 @@ function navClass(nav) {
         <li v-for="nav in navLinks" :key="nav.to">
           <router-link :to="nav.to" class="px-4 py-2 rounded-lg font-semibold transition-all" :class="navClass(nav)">{{ nav.name }}</router-link>
         </li>
-        <li><a href="https://status.hoststudios.de/" target="_blank" class="px-4 py-2 rounded-lg font-semibold transition-all text-white hover:bg-gray-800/70">Status</a></li>
+        <li>
+          <a href="https://status.hoststudios.de/" target="_blank" class="px-4 py-2 rounded-lg font-semibold transition-all text-white hover:bg-gray-800/70">Status</a>
+        </li>
       </ul>
     </div>
   </nav>

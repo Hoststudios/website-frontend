@@ -14,10 +14,9 @@
           <h3 class="font-bold mb-2">Navigation</h3>
           <ul class="space-y-1">
             <li><router-link to="/" class="hover:text-orange-400">Home</router-link></li>
-            <li><router-link to="/projects" class="hover:text-orange-400">Projects</router-link></li>
             <li><router-link to="/team" class="hover:text-orange-400">Team</router-link></li>
             <li><router-link to="/jobs" class="hover:text-orange-400">Jobs</router-link></li>
-            <li><router-link to="/partnerships" class="hover:text-orange-400">Partners</router-link></li>
+            <li><a href="https://status.hoststudios.de/" target="_blank" class="hover:text-orange-400">Status</a></li>
           </ul>
         </div>
         <!-- Socials & Rechtliches -->
@@ -25,10 +24,9 @@
           <h3 class="font-bold mb-2">Kontakt & Social</h3>
           <ul class="space-y-1">
             <li><a href="mailto:kontakt@hoststudios.de" class="hover:text-orange-400">E-Mail</a></li>
-            <li><a href="https://discord.gg/deinlink" target="_blank" class="hover:text-orange-400">Discord</a></li>
+            <li><a href="https://discord.gg/PxaDQ8C9" target="_blank" class="hover:text-orange-400">Discord</a></li>
             <li><a href="https://github.com/hoststudios" target="_blank" class="hover:text-orange-400">GitHub</a></li>
             <li><a href="https://twitter.com/hoststudios" target="_blank" class="hover:text-orange-400">Twitter</a></li>
-            <li><a href="https://status.hoststudios.de/" target="_blank" class="hover:text-orange-400">Status</a></li>
           </ul>
         </div>
       </div>

@@ -9,7 +9,7 @@ const scrollToId = (id) => {
 
 <template>
   <div>
-    <!-- main -->
+    <!-- Main -->
     <section id="main" v-motion="{initial: { opacity: 0, scale: 0.96, y: 40 },enter: { opacity: 1, scale: 1, y: 0, transition: { delay: 0.1, duration: 0.7 } }}" class="relative flex flex-col items-center justify-center min-h-[60vh] bg-gradient-to-br from-orange-600 via-purple-700 to-black text-white py-24 overflow-hidden">
       <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-orange-400 opacity-30 blur-3xl animate-pulse pointer-events-none"></div>
       <img src="https://cdn-proxy.hoststudios.de/logo_large.png" alt="Host Gamestudios Logo" class="w-32 md:w-40 mx-auto mb-8 drop-shadow-2xl z-10" loading="lazy"/>
@@ -21,8 +21,8 @@ const scrollToId = (id) => {
       <button @click="scrollToId('projects')" class="z-10 inline-block bg-white text-black font-bold px-8 py-4 rounded-full shadow-xl hover:bg-orange-200 hover:scale-105 active:scale-95 transition duration-200 text-lg">Jezt entdecken!</button>
     </section>
 
-    <!-- leistung -->
-    <section class="bg-gray-900 text-white py-16 px-4">
+    <!-- Leistung -->
+    <section id="leistung" class="bg-gray-900 text-white py-16 px-4">
       <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
 
         <div v-motion="{initial: { opacity: 0, scale: 0.9, y: 40 },enter: { opacity: 1, scale: 1, y: 0, transition: { delay: 0.2 } }}"
@@ -47,8 +47,8 @@ const scrollToId = (id) => {
       </div>
     </section>
 
-    <!-- projects -->
-    <section id="projects" class="bg-gray-800 text-white py-20 px-4">
+    <!-- Projekte -->
+    <section id="projekte" class="bg-gray-800 text-white py-20 px-4">
       <div class="max-w-6xl mx-auto">
         <h2 v-motion="{initial: { opacity: 0, y: 40 },enter: { opacity: 1, y: 0, transition: { delay: 0.1 } }}" class="text-3xl font-bold text-center mb-10">Unsere Projekte</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
@@ -59,7 +59,6 @@ const scrollToId = (id) => {
             <p class="text-gray-300 mb-4 text-center">Der neue Minecraft-Client für maximale Freiheit, Stabilität und Innovation.</p>
             <a href="https://seriuxmod.net" target="_blank" class="bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-orange-600 transition">Mehr erfahren</a>
           </div>
-          <!-- Weitere Spiele können hier analog mit v-motion und erhöhtem delay eingefügt werden -->
 
           <div v-motion="{initial: { opacity: 0, scale: 0.92, y: 20 },enter: { opacity: 1, scale: 1, y: 0, transition: { delay: 0.15 } }}" class="bg-gray-900 rounded-2xl p-6 shadow-lg flex flex-col items-center hover:scale-105 transition">
             <img src="https://cdn-proxy.hoststudios.de/img/logo_seriux.png" class="w-24 h-24 object-contain mb-4"/>
@@ -72,14 +71,14 @@ const scrollToId = (id) => {
             <img src="https://cdn-proxy.hoststudios.de/img/fragezeichen.png" class="w-24 h-24 object-contain mb-4"/>
             <h3 class="text-xl font-bold mb-2">Projektunterstützung</h3>
             <p class="text-gray-300 mb-4 text-center">Dein Erfolg ist unser Ziel. Wir unterstützen dich mit Erfahrung, Leidenschaft und Innovation.</p>
-            <a href="/" target="_blank" class="bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-orange-600 transition">Mehr erfahren</a>
+            <a href="https://discord.gg/PxaDQ8C9" target="_blank" class="bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-orange-600 transition">Mehr erfahren</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Partner -->
-    <section v-motion="{initial: { opacity: 0, y: 40 },enter: { opacity: 1, y: 0, transition: { delay: 0.2 } }}" class="bg-gradient-to-r from-purple-900 to-orange-700 text-white py-14 text-center">
+    <section id="partner" v-motion="{initial: { opacity: 0, y: 40 },enter: { opacity: 1, y: 0, transition: { delay: 0.2 } }}" class="bg-gradient-to-r from-purple-900 to-orange-700 text-white py-14 text-center">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-2xl md:text-3xl font-bold mb-3">Powered by Partners & Community</h2>
         <div class="flex flex-col md:flex-row items-center justify-center gap-12 my-8">
@@ -88,6 +87,12 @@ const scrollToId = (id) => {
             <img src="https://cdn-proxy.hoststudios.de/img/logo_net-struct.png" style="max-width: 100%;" class="w-20 h-20 object-contain mb-4"/>
             <h3 class="text-xl font-bold mb-2"> </h3>
             <a href="https://net-struct.de" target="_blank" class="bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-orange-600 transition">Partner besuchen</a>
+          </div>
+
+          <div v-motion="{initial: { opacity: 0, scale: 0.92, y: 20 },enter: { opacity: 1, scale: 1, y: 0, transition: { delay: 0.15 } }}" class="bg-gray-800 rounded-2xl p-4 shadow-lg flex flex-col items-center hover:scale-105 transition">
+            <img src="https://cdn-proxy.hoststudios.de/willy_logo.png" style="max-width: 100%;" class="w-20 h-20 object-contain mb-4"/>
+            <h3 class="text-xl font-bold mb-2"> </h3>
+            <a href="https://tshirt-willy.de" target="_blank" class="bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-orange-600 transition">Partner besuchen</a>
           </div>
 
         </div>
