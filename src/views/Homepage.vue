@@ -18,7 +18,7 @@ const scrollToId = (id) => {
         <br/>
         <span class="text-orange-600 font-bold">Gegründet von Max S. </span>am 22. Juni 2025.
       </p>
-      <button @click="scrollToId('projects')" class="z-10 inline-block bg-white text-black font-bold px-8 py-4 rounded-full shadow-xl hover:bg-orange-200 hover:scale-105 active:scale-95 transition duration-200 text-lg">Jezt entdecken!</button>
+      <button @click="scrollToId('projekte')" class="z-10 inline-block bg-white text-black font-bold px-8 py-4 rounded-full shadow-xl hover:bg-orange-200 hover:scale-105 active:scale-95 transition duration-200 text-lg">Jezt entdecken!</button>
     </section>
 
     <!-- Leistung -->
